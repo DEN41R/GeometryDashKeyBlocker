@@ -100,6 +100,57 @@
 - Добавлены уведомления в трее
 - Улучшена стабильность работы
 
+## 📥 Установка
+
+### Через релизы (рекомендуется)
+
+1. 📦 Перейдите на страницу [Releases](https://github.com/DEN41R/GeometryDashKeyBlocker/releases)
+2. ⬇️ Скачайте последний релиз `GeometryDashKeyBlocker.exe`
+3. 🚀 Запустите скачанный файл
+
+### Сборка из исходников
+
+#### Требования для сборки
+
+<table>
+  <tr>
+    <td>🛠️</td>
+    <td><b>SDK:</b></td>
+    <td>.NET 8.0 SDK</td>
+  </tr>
+  <tr>
+    <td>👨‍💻</td>
+    <td><b>IDE:</b></td>
+    <td>Visual Studio 2022 или VS Code с C# расширением</td>
+  </tr>
+  <tr>
+    <td>📦</td>
+    <td><b>Система сборки:</b></td>
+    <td>dotnet CLI</td>
+  </tr>
+</table>
+
+#### Шаги сборки
+
+1. 📂 Клонируйте репозиторий:
+```bash
+git clone https://github.com/denchir/GeometryDashKeyBlocker.git
+cd GeometryDashKeyBlocker/src
+```
+
+2. 🔨 Соберите проект:
+```bash
+# Отладочная сборка
+dotnet build
+
+# Релизная сборка
+dotnet publish -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+```
+
+3. 📁 Готовый файл будет находиться в:
+   - Отладочная версия: `bin/Debug/net8.0-windows/win-x64/GeometryDashKeyBlocker.exe`
+   - Релизная версия: `bin/Release/net8.0-windows/win-x64/publish/GeometryDashKeyBlocker.exe`
+
 ---
 
 <div align="center">
